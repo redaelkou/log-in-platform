@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+$bgcolor: black;
+$color: white;
+body{
+    background-color: $bgcolor;
+}
+
+    p{
+        color: white;
+        position: absolute;
+        left: 30%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        max-width: 500px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+.login{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid white;
+    input{
+        margin: 10px 0;
+        border-radius: 10px;
+        border: 0.5px solid black;
+    }
+    input[type=submit]{
+        background-color: rgb(20, 105, 161);
+        color: white;
+        font-size: 18px;
+        font-weight: bolder;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 0 10px white;
+        }
+    }
+    input:not([type=button]){
+        width: 340px;
+        height: 40px;
+    }
+    input[type=button]{
+        width: 200px;
+        height: 40px;
+        background-color: rgb(57, 181, 197);
+        cursor:  pointer;
+        &:hover{
+            box-shadow: 0 0 10px white;
+        }
+    }
+    input[placeholder]{
+        padding-left: 20px;
+        font-size: 18px;
+        color: rgb(46, 44, 44);
+    }
+    input{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    h4{
+        font-weight: bold;
+        a{
+            color: $color;
+        }
+    }
+}
+@media only screen and (max-width: 280px){
+    p{
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        width: 200px;
+        text-align: center;
+    }
+    .login{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 240px;
+        input:not([type=button]){
+            width: 200px;
+            height: 40px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 780px){
+    p{
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        width: 300px;
+        text-align: center;
+    }
+    .login{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 240px;
+        input:not([type=button]){
+            width: 200px;
+            height: 40px;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 980px){
+    p{
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        text-align: center;
+    }
+    .login{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 240px;
+        input:not([type=button]){
+            width: 200px;
+            height: 40px;
+        }
+    }
+}
